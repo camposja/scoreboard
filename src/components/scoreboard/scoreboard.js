@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import Scorearea from './components/scorearea/scorearea';
+// import Updatescore from './components/updatescore/updatescore';
 import './scoreboard.css';
 
 class Scoreboard extends Component {

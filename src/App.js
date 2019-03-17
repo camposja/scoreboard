@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import Scoreboard from './components/scoreboard/scoreboard';
+import Scorearea from './components/scorearea/scorearea';
+import Updatescore from './components/updatescore/updatescore';
 
 import './App.css';
 
