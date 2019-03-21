@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Scoreboard from './components/scoreboard/scoreboard';
+import Scoreboard from './components/scoreboard';
 import Scorearea from './components/scorearea/scorearea';
 import Updatescore from './components/updatescore/updatescore';
 
