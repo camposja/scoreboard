@@ -6,8 +6,8 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      team1Name: "Rockets 1",
-      team2Name: "Tito y Bambino",
+      team1Name: "Team 1",
+      team2Name: "Team 2",
       score1: 0,
       score2: 0
     }
