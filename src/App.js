@@ -7,7 +7,7 @@ class App extends Component {
     super(props)
     this.state = {
       team1Name: "Rockets 1",
-      team2Name: "Team 2",
+      team2Name: "Tito y Bambino",
       score1: 0,
       score2: 0
     }
@@ -66,8 +66,11 @@ class App extends Component {
           increaseScore2={this.increaseScore2}
           decreaseScore2={this.decreaseScore2}
           team1Name={this.state.team1Name}
+          team2Name={this.state.team2Name}
           nameChange1={this.nameChange1}
           nameSubmit1={this.nameSubmit1}
+          nameChange2={this.nameChange2}
+          nameSubmit2={this.nameSubmit2}
         />
       </div>
     );

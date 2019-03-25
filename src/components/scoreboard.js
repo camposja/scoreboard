@@ -17,6 +17,7 @@ class Scoreboard extends Component {
             score1={this.props.score1}
             score2={this.props.score2}
             team1Name={this.props.team1Name}
+            team2Name={this.props.team2Name}
           />
           <Updatescore 
             increaseScore1={this.props.increaseScore1}
@@ -25,6 +26,8 @@ class Scoreboard extends Component {
             decreaseScore2={this.props.decreaseScore2}
             nameChange1={this.props.nameChange1}
             nameSubmit1={this.props.nameSubmit1}
+            nameChange2={this.props.nameChange2}
+            nameSubmit2={this.props.nameSubmit2}
           />
         </div>   
     );

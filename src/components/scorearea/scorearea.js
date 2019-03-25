@@ -15,7 +15,7 @@ class Scorearea extends Component {
                 <p className="team1Score">{this.props.score1}</p>
             </section>
             <section className="team2">
-                <h2>Team 2</h2>
+                <h2>{this.props.team2Name}</h2>
                 <p className="team2Score">{this.props.score2}</p>
             </section>
         </section>

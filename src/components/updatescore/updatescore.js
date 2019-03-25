@@ -43,8 +43,16 @@ class Updatescore extends Component {
             <section className="team2">
                 <section className="team-name">
                     update team 2 name
-                    <input type="text" />
-                    <button>Update</button>
+                    <input 
+                        type="text" 
+                        onBlur={this.props.nameChange2}
+                    />
+                    <button
+                        className="update-team-2-name"
+                        onClick={this.props.nameSubmit2}
+                    >
+                        Update
+                    </button>
                 </section>
                 <section>
                     update team 2 score
