@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Scoreboard from './components/scoreboard';
-import Scorearea from './components/scorearea/scorearea';
-import Updatescore from './components/updatescore/updatescore';
 import './App.css';
 
 class App extends Component {
@@ -39,23 +37,34 @@ class App extends Component {
     }
   }
 
+  nameChange1 = event => {
+    this.setState({ teamName1: event.target.value })
+  }
+
+  nameSubmit1 = event => {
+    event.preventDefault()
+  }
+
+  nameChange2 = event => {
+    this.setState({ teamName2: event.target.value })
+  }
+
+  nameSubmit2 = event => {
+    event.preventDefault()
+  }
+
   render() {
     return (
       <div className="App">
         <h1>My Score Board</h1>
-        <Scorearea
+        <Scoreboard 
           score1={this.state.score1}
           score2={this.state.score2}
-        />
-        <Updatescore 
           increaseScore1={this.increaseScore1}
           decreaseScore1={this.decreaseScore1}
           increaseScore2={this.increaseScore2}
           decreaseScore2={this.decreaseScore2}
-        
         />
-
-
       </div>
     );
   }
