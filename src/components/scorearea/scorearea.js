@@ -2,16 +2,22 @@ import React, { Component } from 'react';
 import './scorearea.css';
 
 class Scorearea extends Component {
+    constructor(props) {
+        super(props)
+        this.state = {}
+      }
+
+
   render() {
     return (
-        <section class="score-area">
-            <section class="team1">
+        <section className="score-area">
+            <section className="team1">
                 <h2>Team 1</h2>
-                <p class="team1Score">10</p>
+                <p className="team1Score">{this.props.score1}</p>
             </section>
-            <section class="team2">
+            <section className="team2">
                 <h2>Team 2</h2>
-                <p class="team2Score">10</p>
+                <p className="team2Score">{this.props.score2}</p>
             </section>
         </section>
     );
