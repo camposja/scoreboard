@@ -7,12 +7,11 @@ class Scorearea extends Component {
         this.state = {}
       }
 
-
   render() {
     return (
         <section className="score-area">
             <section className="team1">
-                <h2>Team 1</h2>
+                <h2>{this.props.team1Name}</h2>
                 <p className="team1Score">{this.props.score1}</p>
             </section>
             <section className="team2">

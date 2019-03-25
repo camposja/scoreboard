@@ -6,7 +6,7 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      team1Name: "Team 1",
+      team1Name: "Rockets 1",
       team2Name: "Team 2",
       score1: 0,
       score2: 0
@@ -38,15 +38,16 @@ class App extends Component {
   }
 
   nameChange1 = event => {
-    this.setState({ teamName1: event.target.value })
+    this.setState({ team1Name: event.target.value })
   }
 
   nameSubmit1 = event => {
+    console.log('A name was submitted: ' + this.state.team1Name)
     event.preventDefault()
   }
 
   nameChange2 = event => {
-    this.setState({ teamName2: event.target.value })
+    this.setState({ team2Name: event.target.value })
   }
 
   nameSubmit2 = event => {
@@ -64,6 +65,9 @@ class App extends Component {
           decreaseScore1={this.decreaseScore1}
           increaseScore2={this.increaseScore2}
           decreaseScore2={this.decreaseScore2}
+          team1Name={this.state.team1Name}
+          nameChange1={this.nameChange1}
+          nameSubmit1={this.nameSubmit1}
         />
       </div>
     );

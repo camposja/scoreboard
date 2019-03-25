@@ -16,12 +16,15 @@ class Scoreboard extends Component {
           <Scorearea
             score1={this.props.score1}
             score2={this.props.score2}
+            team1Name={this.props.team1Name}
           />
           <Updatescore 
             increaseScore1={this.props.increaseScore1}
             decreaseScore1={this.props.decreaseScore1}
             increaseScore2={this.props.increaseScore2}
             decreaseScore2={this.props.decreaseScore2}
+            nameChange1={this.props.nameChange1}
+            nameSubmit1={this.props.nameSubmit1}
           />
         </div>   
     );
